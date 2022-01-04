@@ -1,0 +1,200 @@
+.promo {
+    height: 100vh;
+    position: relative;
+    
+    &__slider {
+        &__wrapper {
+           width: 90%;
+            max-width: 990px;
+            margin: 0 auto;
+            
+        }
+        .title {
+            max-width: 516px;
+            margin-top: 158px;
+        }
+                
+        
+        .slide_1 {
+            background: url(../img/promo_img.png) no-repeat center;
+            background-size: cover;
+            height: 90vh;
+           
+            .subtitle {
+                max-width: 628px;
+                margin-top: 24px;
+                font-weight: 300;
+            }
+        }
+        .slide_2 {
+            background: url(../img/promo_bg2.jpg) no-repeat center;
+            background-size: cover;
+            height: 90vh;
+            .title {
+                color: #fff;
+                line-height: 43px;
+                
+            }
+            .subtitle {
+                max-width: 628px;
+                margin-top: 24px;
+                color: #fff;
+            }
+            .promo__btn {
+                border-color: #fff;
+                color: #fff;
+                &:hover {
+                    border: none;
+                }
+            }
+        }
+        .slide_3 {
+            background: url(../img/promo_bg3.jpg) no-repeat center;
+            background-size: cover;
+            height: 90vh;
+            .title {
+                color: #fff;
+                line-height: 43px;
+                
+            }
+            .subtitle {
+                max-width: 628px;
+                margin-top: 24px;
+                color: #fff;
+            }
+            .promo__btn {
+                border-color: #fff;
+                color: #fff;
+                &:hover {
+                    border: none;
+                }
+            }
+        }
+                                   
+           
+           
+           
+        }
+   
+    
+    &__btn {
+        display: block;
+        color: $text-color;
+        text-decoration: none;
+        border: 1px solid $main-color;
+        width: 250px;
+        height: 50px;
+        margin: 34px 0 0 0px;
+        padding: 0px 0;
+        text-align: center;
+        font-size: 24px;
+        line-height: 44px;
+        cursor: pointer;
+        &:hover {
+            background: $main-color;
+            color: #fff;
+            transition: all .3s;
+            filter: drop-shadow(0px 5px 10px rgba(50, 50, 50, 0.5));
+        }
+        &:active {
+            box-shadow: inset 4px 4px 4px rgba(16, 16, 16, 0.68);
+        }
+    }
+    .prev {
+        position: absolute;
+        font-size: 50px;
+        color: $main-color;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2%;
+        border-radius: 100%;
+        border: 1px solid $main-color;
+        width: 52px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        svg {
+            fill: $text-color; 
+        }
+        svg {
+            transform: rotateY(180deg);
+        }
+        &:hover {
+            background: $main-color;
+            svg {
+                fill: #fff; 
+            }
+        }
+    }
+    .next {
+        position: absolute;
+        font-size: 50px;
+        color: $main-color;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2%;
+        border-radius: 100%;
+        border: 1px solid $main-color;
+        width: 52px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        svg {
+            fill: $text-color; 
+        }
+        &:hover {
+            background: $main-color;
+            svg {
+                fill: #fff; 
+            }
+        }
+    }
+    .slick-dots {
+        display: flex;
+        list-style-type: none;
+        position: absolute;
+        bottom: 63px;
+        left: 50%;
+        transform: translateX(-50%);
+        li {
+            color: transparent;
+            border-radius: 100%;
+            margin: 0 5px;
+            width: 15px;
+            height: 15px;
+            background: transparent;
+            border: 1px solid $main-color;
+            
+            cursor: pointer;
+            button {
+                display: none;
+            }
+        }
+        .slick-active {
+            background: $main-color;
+        }
+
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 35px;
+        width: 90%;
+        box-shadow: 0px 1.5px 2.625px rgba(0, 0, 0, 0.25);
+        
+        transform: translateY(-53px);
+        background: #ffffff;
+        margin: 0 auto;
+        
+    }
+    &__slogan {
+        font-size: 28px;
+        color: $text-color;
+        letter-spacing: -1.5px;
+    }
+}

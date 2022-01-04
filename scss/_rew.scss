@@ -1,0 +1,122 @@
+.rew {
+    padding: 0 0 120px;
+    height: 500px;
+    .title {
+        margin-bottom: 23px;
+       
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 24px;
+        color: $text-color;
+        span {
+            margin-top: 4px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 19px;
+            display: block;
+            color: rgba(50, 50, 50, 0.8);
+        }
+    }
+    
+    &__wrap {
+        background: #fff;
+        border: 1px solid $main-color;
+        margin: 20px;
+        padding: 35px 16px;
+        border-radius: 5px;
+       transform: scale(0.8);
+        transition: all .3s;
+        
+    }
+    &__man {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 26px;
+        &__photo {
+            margin-right: 19px;
+            border: 1px solid $main-color;
+            border-radius: 100%;
+            padding: 13px;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    
+    &__text {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+        text-align: justify;
+        letter-spacing: -0.025em;
+
+        color: rgba(50, 50, 50, 0.8);
+
+        transition: all .3s;
+    }
+    .slick-arrow {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: #fff;
+        color: $text-color;
+        border: 1px solid $main-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        cursor: pointer;
+        &:hover {
+            background: $main-color;
+            color: #fff;
+        }
+        
+    }
+    .slick-prev {
+        left: 23%;
+        z-index: 2;
+    }
+    .slick-next {
+        right: 23%;
+    }
+    .slick-dots {
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        list-style-type: none;
+        margin-top: 10px;
+        li {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            border-radius: 100%;
+            border: none;
+            background: $main-color;
+            opacity: .5;
+            button {display: none;}
+        }
+        
+    }
+}
+
+
+.slick-center {
+    .rew__wrap1 {
+        padding: 0 50px;
+    }
+    .rew__wrap {
+        transform: scale(1);
+    }
+    
+    .rew__text {
+        font-size: 14px;
+    }
+
+
+}
