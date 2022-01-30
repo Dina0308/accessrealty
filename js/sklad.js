@@ -193,55 +193,6 @@ $('.torg__modal__slider').each(function(i) {
 })
 });
 
-// вычислиние цены за метр
-
-// var a1 = + document.getElementById('num1-1').innerHTML;
-// var b1 = + document.getElementById('num2-1').innerHTML;
-// var c1=(Math.floor(a1/b1)).toLocaleString('ru');
-// document.getElementById('result1-1').innerHTML=c1;
-// document.getElementById('result2-1').innerHTML=c1;
-// a1 = (a1).toLocaleString('ru');
-// document.getElementById('num1-1').innerHTML=a1;
-
-// var a2 = + document.getElementById('num1-2').innerHTML;
-// var b2 = + document.getElementById('num2-2').innerHTML;
-// var c2=(Math.floor(a2/b2)).toLocaleString('ru');
-// document.getElementById('result1-2').innerHTML=c2;
-// document.getElementById('result2-2').innerHTML=c2;
-// a2 = (a2).toLocaleString('ru');
-// document.getElementById('num1-2').innerHTML=a2;
-
-// var a3 = + document.getElementById('num1-3').innerHTML;
-// var b3 = + document.getElementById('num2-3').innerHTML;
-// var c3=(Math.floor(a3/b3)).toLocaleString('ru');
-// document.getElementById('result1-3').innerHTML=c3;
-// document.getElementById('result2-3').innerHTML=c3;
-// a3 = (a3).toLocaleString('ru');
-// document.getElementById('num1-3').innerHTML=a3;
-
-// var a4 = + document.getElementById('num1-4').innerHTML;
-// var b4 = + document.getElementById('num2-4').innerHTML;
-// var c4=(Math.floor(a4/b4)).toLocaleString('ru');
-// document.getElementById('result1-4').innerHTML=c4;
-// document.getElementById('result2-4').innerHTML=c4;
-// a4 = (a4).toLocaleString('ru');
-// document.getElementById('num1-4').innerHTML=a4;
-
-// var a5 = + document.getElementById('num1-5').innerHTML;
-// var b5 = + document.getElementById('num2-5').innerHTML;
-// var c5=(Math.floor(a5/b5)).toLocaleString('ru');
-// document.getElementById('result1-5').innerHTML=c5;
-// document.getElementById('result2-5').innerHTML=c5;
-// a5 = (a5).toLocaleString('ru');
-// document.getElementById('num1-5').innerHTML=a5;
-
-// var a6 = + document.getElementById('num1-6').innerHTML;
-// var b6 = + document.getElementById('num2-6').innerHTML;
-// var c6=(Math.floor(a6/b6)).toLocaleString('ru');
-// document.getElementById('result1-6').innerHTML=c6;
-// document.getElementById('result2-6').innerHTML=c6;
-// a6 = (a6).toLocaleString('ru');
-// document.getElementById('num1-6').innerHTML=a6;
   
 // цена в валюте в карточке объекта - показ блоков
 $('.torg__modal__subtitle_price_dollar, .torg__modal__subtitle_price_euro').hide();
@@ -281,11 +232,7 @@ function price(obj) {
     });
   }
 }
-// //скриншот карточки товара
-// html2canvas(document.body).then(function(canvas) {
-//   document.body.appendChild(canvas);
-//   console.log('ok');
-// });
+
 
 
 
